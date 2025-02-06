@@ -3,7 +3,6 @@ How to Run:
 Install Dependencies:
 
 pip install websockets openai  # For the backend
-# For Windows, also: pip install pywinauto
 # For Linux, also: sudo apt-get install xdotool (or your distro's equivalent)
 
 Set up your OpenAI API Key: Set the OPENAI_API_KEY environment variable. For example, on Linux/macOS:
