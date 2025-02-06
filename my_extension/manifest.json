@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Live Transcript Streamer",
+    "version": "1.0",
+    "description": "Streams Google Meet transcript to a local server.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://meet.google.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
